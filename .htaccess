@@ -1,0 +1,51 @@
+#
+#	  Author :		Luke Brown
+#	  License:  	Contracted work - Written permission required from me for third party use.
+#	  Created: 		August 2014
+#	  URL    :		https://github.com/LukeXF/shove-website
+#	  Contact:		me@luke.sx
+#
+
+RewriteEngine On
+Options -Indexes
+ErrorDocument 403 http://demo.luke.sx/gunsdaily.net/#
+ErrorDocument 404 http://demo.luke.sx/gunsdaily.net/#
+
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^ban/([^/]+)/([^/]+)/([^/]+)$ ban.php?username=$1&time=$2&format=$3
+RewriteRule ^ban/([^/]+)/([^/]+)$ ban.php?username=$1&time=$2
+RewriteRule ^ban/([^/]+)$ ban.php?username=$1&time=$2&format=$3
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1\.php -f
+RewriteRule ^([^/]+)/?$ $1.php [L]
+
+<FilesMatch "\.(?i:xml)$">
+      ForceType application/octet-stream
+      Header set Content-Disposition attachment
+</FilesMatch>
+
+
+# don't touch /assets URIs
+RewriteRule ^assets/ - [L,NC]
+
+AddType text/css .css 
+
+<Files "/assets/img/1.jpg">
+  ExpiresActive On
+  ExpiresDefault A60
+</Files>
+<Files "/assets/img/2.jpg">
+  ExpiresActive On
+  ExpiresDefault A60
+</Files>
+<Files "/assets/img/3.jpg">
+  ExpiresActive On
+  ExpiresDefault A60
+</Files>
+<Files "/assets/img/4.jpg">
+  ExpiresActive On
+  ExpiresDefault A60
+</Files>
