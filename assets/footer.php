@@ -15,13 +15,13 @@
 
 			<div class="col-md-6 footer-right">
 				<h5>
-					<a href="http://">Home</a>
-					<a href="http://">Your Mom</a>
-					<a href="http://">My Mom</a>
-					<a href="http://">Contact</a>
+					<a href="/">Home</a>
+					<a href="faq">FAQ</a>
+					<a href="stats">Statistics</a>
+					<a href="contact">Contact</a>
 				</h5>
 				<h3>
-					<a href="skype:0123131232?call"><i class="fa fa-copyright fa-2x"> Guns Daily 2014</i></a>
+					<a href=""><i class="fa fa-copyright fa-2x"> Guns Daily 2014</i></a>
 					<a href="mailto:business@gunsdaily.net?subject=Business Inquiry "><i class="fa fa-envelope-square fa-2x"> business@gunsdaily.net</i></a>
 				</h3>
 			</div>				

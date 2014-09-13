@@ -366,6 +366,7 @@ font-weight: 100;
   position: relative;
   left: -50%;
   color: #fff;
+  font-weight: 300;
   padding: 0.4em 1em;
   -webkit-border-radius: 1.2em;
   -moz-border-radius: 1.2em;

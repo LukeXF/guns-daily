@@ -11,9 +11,7 @@
 	<meta name="description" content="A beautiful image and screenshot sharing application from desktop to the web in seconds">
 	<meta name="author" content="Luke Brown">
 	<meta charset="utf-8">
-
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700|Viga|Courgette|Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	<link rel="shortcut icon" href="./assets/img/icon.png" />

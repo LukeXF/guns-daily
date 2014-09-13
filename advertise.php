@@ -43,7 +43,7 @@
 				</div>
 			</div>
 			<div class="col-md-5">
-				<h1 style="text-transform:uppercase;font-weight: 100;">Pricing</h1>
+				<h1 style="text-transform:uppercase;font-weight: 100;text-align: center;">Pricing</h1>
 				<div class="row pricing">
 		
 					<div class="col-xs-6">
@@ -51,11 +51,11 @@
 						1 Hour
 					</div>
 					<div class="col-xs-6">
-						<strong>$25</strong><br>
+						<strong>$26</strong><br>
 						2 Hour
 					</div>
 					<div class="col-xs-6">
-						<strong>$50</strong><br>
+						<strong>$40</strong><br>
 						3 Hour
 					</div>
 					<div class="col-xs-6">
@@ -63,11 +63,11 @@
 						24 Hour
 					</div>
 					<div class="col-xs-6">
-						<strong>$100</strong><br>
+						<strong>$90</strong><br>
 						72 Hours
 					</div>
 					<div class="col-xs-6">
-						<strong>$150</strong><br>
+						<strong>$125</strong><br>
 						Lifetime
 					</div>
 
@@ -136,6 +136,7 @@
 
 				<img src="http://gunsdaily.net/wp-content/uploads/2014/07/hellbentlogo_newwhite1-e1406080551918.png" alt="Mountain View" class="feedback">
 				<p>Gunsdaily, plain and simple is badass. Hellbent holsters is proud to work with Gunsdaily and represent what they believe in: Guns! As a holster company culture is everything. Its not simply about the products we make, but the people behind them. <br><br> We want to stand up and say that working with Gunsdaily has been a great experience and we appreciate all the business that we have receive just by being associated with them. We look forward to doing more with them in the future. </p>
+				<br><br><br><br>
 				<strong> Glade Smith </strong>
 				<p class="et_pb_testimonial_meta"><a href="http://www.hellbentholsters.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.hellbentholsters.com']);" target="_blank">HellbentHolsters</a></p>
 			</div></div> <!-- .et_pb_testimonial_description -->
@@ -146,7 +147,9 @@
 				<img src="http://gunsdaily.net/wp-content/uploads/2014/07/ss-2014-07-22-at-10.10.png" alt="Mountain View" class="feedback">
 				<p>“Advertising with GunsDaily1 has been instrumental in growing our social media presence.</p>
 				<p>Short and sweet but there really isnt much else to say, they get the job done.”</p>
-
+				<br><br><br><br>
+				<br><br><br><br>
+				<br><br>
 				<strong> Michael Lambka </strong>
 				<p class="et_pb_testimonial_meta"><a href="http://gunmagwarehouse.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://gunmagwarehouse.com']);" target="_blank">Gun Mag Warehouse</a></p>
 			</div></div> <!-- .et_pb_testimonial_description -->

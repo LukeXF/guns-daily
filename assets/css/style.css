@@ -814,16 +814,19 @@ NO MORE TABLES!! ;)
 	padding-bottom: 15px;
 	margin-bottom: 12px;
 	display: -webkit-inline-box;
+	font-family: 'Courgette', cursive;
 }
 
 .pricing > div {
-	margin-bottom: 40px;
-	margin-top: 40px;
+	margin-bottom: 65px;
+	margin-top: 65px;
+	line-height: 100%;
 	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: rgb(94, 94, 94);
 	font-size: 30px;
+	font-family: 'Viga', sans-serif;
 }
 
 .form2 > input, .form2 > textarea, .form2 > select {
