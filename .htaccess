@@ -8,8 +8,8 @@
 
 RewriteEngine On
 Options -Indexes
-ErrorDocument 403 http://demo.luke.sx/gunsdaily.net/#
-ErrorDocument 404 http://demo.luke.sx/gunsdaily.net/#
+ErrorDocument 403 http://dev.gunsdaily.net/404
+ErrorDocument 404 http://dev.gunsdaily.net/404
 
 RewriteEngine On
 RewriteBase /
@@ -22,17 +22,19 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{DOCUMENT_ROOT}/$1\.php -f
 RewriteRule ^([^/]+)/?$ $1.php [L]
 
+# sets the true header of a web page
 <FilesMatch "\.(?i:xml)$">
       ForceType application/octet-stream
       Header set Content-Disposition attachment
 </FilesMatch>
 
-
-# don't touch /assets URIs
+# blocks the assets directory from been effected by rewrite
 RewriteRule ^assets/ - [L,NC]
 
+# Tells css that it's actually css
 AddType text/css .css 
 
+# Load the images in cache to avoid long page loading
 <Files "/assets/img/1.jpg">
   ExpiresActive On
   ExpiresDefault A60

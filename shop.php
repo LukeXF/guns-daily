@@ -1,19 +1,33 @@
-<?php include './assets/header.php'; ?>
-<?php include './assets/navbar.php'; ?>
+<?php 
+    // Load header
+    include './assets/header.php';
 
-	<!-- ////////////////////////////////////
-		HOMEPAGE HEADER
-	///////////////////////////////////// -->
+    // include the configs / constants for the database connection
+    require_once("config/db.php");
+    // load the login class
+    require_once("classes/Login.php");
+    // Process the page loading
+    require("classes/ProcessPage.php");
+
+    // Load navbar
+    include './assets/navbar.php';
+
+    // Includes slider
+    require './assets/slider.php';
 
 
-	<?php require './assets/slider.php'; ?>
+    // if logged in display content
+    if ($login->isUserLoggedIn() == true) {
+        include("views/v-shop.php");
+    } else {
+        include("views/v-shop.php");
+    }
 
-	<div class="container" style="margin-top: 100px; margin-bottom: 10vw;">
-		<h1 style="text-transform: uppercase;" align="center">Coming Soon</h1>
-			
-	</div>
+    // load the shop class
+    echo "<div class='container'><div class='row'><div class='col-md-12'>";
+    require_once("classes/Shop.php");
+    echo "</div></div></div>";
 
-
-
-
-	<?php require './assets/footer.php'; ?>
+    // Load footer
+    include("assets/footer.php");
+?>

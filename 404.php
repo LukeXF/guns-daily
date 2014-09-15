@@ -18,9 +18,9 @@
 
     // if logged in display content
     if ($login->isUserLoggedIn() == true) {
-        include("views/v-logged-in.php");
+        include("views/v-404.php");
     } else {
-        include("views/v-signin.php");
+        include("views/v-404.php");
     }
 
 

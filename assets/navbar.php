@@ -1,4 +1,4 @@
-
+<div class="page-wrap">
 	<div id="top-nav" class="navbar navbar-fixed-top navbar-default">
 		<div class="container">
 			<div class="container">
@@ -16,7 +16,9 @@
 						<li><a href="shop">Shop</a></li>
 						<li><a href="advertise">Advertise</a></li>
 						<li><a href="contact">Contact</a></li>
-						<li><a href="login" data-spy="affix" data-offset-top="450">Login</a></li>
+						<li><a href="account.php" class="download" data-spy="affix" data-offset-top="450">
+							<?php echo $navlogin; ?>
+						</a></li>
 					</ul>
 				</div>
 			</div><!--CONTAINER-->

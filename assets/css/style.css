@@ -15,6 +15,10 @@ body {
 	background-color: #ffffff;
 }
 
+html, body {
+	height: 100%;
+}
+
 *:hover {
 	text-decoration: none !important;
 }
@@ -255,6 +259,8 @@ padding: 8px 12px;
 	padding-bottom: 5px;
 	padding-top: 20px;
 	color: #6B6B6B;
+	line-height: 70px;
+	margin-top: 30px;
 }
 
 .footer-left > h5 > a > i {
@@ -791,6 +797,7 @@ NO MORE TABLES!! ;)
 	-moz-transition: all 0.2s;
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
+	display: inline;
 }
 
 .form-button.red {
@@ -806,6 +813,26 @@ NO MORE TABLES!! ;)
 	background: rgba( 0, 0, 0, 0.05 );
 	border: 2px solid transparent;
 	padding: 6px 14px 6px 14px !important;
+}
+
+.form-button.fix {
+	display: inline;
+	padding-right: 1px !important;
+	padding-left: 1px !important;
+	width: 110px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.form-button.small {
+	color: green!important;
+	padding: 3px 15px 3px 15px !important;
+	font-size: 14px;
+	border: 1px solid !important;
+}
+
+.form-button.small:hover {
+	border: 1px solid transparent !important;
 }
 
 .pricing > div > strong {
@@ -861,4 +888,60 @@ img.feedback {
 	padding: 25px;
 	margin-bottom: -10px;
 	margin-top: -30px;
+}
+
+.page-wrap {
+	min-height: 100%;
+	padding-bottom: 30px;
+	margin-bottom: -125px;
+}
+
+.page-wrap:after{
+	content:"";
+	display:block
+}
+#footer , .page-wrap:after{
+	height:95px
+}
+
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
 }
