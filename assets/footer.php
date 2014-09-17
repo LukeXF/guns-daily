@@ -5,7 +5,7 @@
 
 			<div class="col-md-6 footer-left">
 				<h3>
-					Site By <a href="http://luke.sx">Luke Brown</a>
+					Site By <a href="http://luke.sx" target="_blank">Luke Brown</a>
 				</h3>
 				<h5>
 					<a href="https://"><i class="fa fa-instagram fa-2x"> Instagram</i></a>

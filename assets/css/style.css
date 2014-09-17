@@ -945,3 +945,26 @@ img.feedback {
     padding: 9px;
     color: #333;
 }
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////
+	STORE STYLING
+//////////////////////////////////// */
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+	background-color: #3A5269 !important;
+	border-color: #3A5269 !important;
+}
+
+.lead {
+	text-transform: uppercase;
+}
+
+.list-group-item {
+	text-transform: uppercase;
+}

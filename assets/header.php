@@ -19,19 +19,10 @@
 	<link rel="stylesheet" href="./assets/css/bootstrap.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
 
-	<?php include './assets/protected/config.php'; ?>
-
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-	<link rel="shortcut icon" href="assets/ico/favicon.png">
-
 	<title>slippry demo</title>
 	<script src="assets/js/slippry.min.js"></script>
 	<script src="//use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" Content-Type:"text/css" href="assets/css/demo.css">
 	<link rel="stylesheet" Content-Type:"text/css" href="assets/css/slippry.css">
 </head>
 

@@ -24,22 +24,22 @@
 
 
 	// UUID Check
-	$uuidLength = $_SESSION['user_uuid'];
-	if (strlen($uuidLength) > 0) {
-	    $isVerified = true;
-	} else {
-	    $isVerified = false;
-	}
+//	$uuidLength = $_SESSION['user_uuid'];
+//	if (strlen($uuidLength) > 0) {
+//	    $isVerified = true;
+//	} else {
+//	    $isVerified = false;
+//	}
 
-	if ($isVerified == true) {
-	    $VerifiedBoxDisplay = array(
-	    "btn-success verified",
-	    "verified");
-	} else {
-	    $VerifiedBoxDisplay = array(
-	    "btn-danger notverified",
-	    "verified");
-	}
+//	if ($isVerified == true) {
+//	    $VerifiedBoxDisplay = array(
+//	    "btn-success verified",
+//	    "verified");
+//	} else {
+//	    $VerifiedBoxDisplay = array(
+//	    "btn-danger notverified",
+//	    "verified");
+//	}
 
 	// creates an varible to display the fully true url of the web page
 	$url = explode('.', $_SERVER['SERVER_NAME']);

@@ -6,8 +6,6 @@
     require_once("config/db.php");
     // load the login class
     require_once("classes/Login.php");
-    // load the shop class
-    require_once("classes/Shop.php");
     // Process the page loading
     require("classes/ProcessPage.php");
 
@@ -17,19 +15,17 @@
     // Includes slider
     require './assets/slider.php';
 
+?>
 
-    // if logged in display content
-    if ($login->isUserLoggedIn() == true) {
-        include("views/v-shop.php");
-    } else {
-        include("views/v-shop.php");
-    }
+<div class="container" style="margin-top:50px;">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <?php include './assets/store-rating.php'; ?>
+        </div>
+    </div>
+</div>
 
-    // load the shop class
-    //echo "<div class='container'><div class='row'><div class='col-md-12'>";
-    //require_once("classes/Shop.php");
-    //echo "</div></div></div>";
-
+<?php  
     // Load footer
     include("assets/footer.php");
 ?>
