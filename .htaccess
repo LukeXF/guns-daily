@@ -14,10 +14,6 @@ ErrorDocument 404 http://dev.gunsdaily.net/404
 RewriteEngine On
 RewriteBase /
 
-RewriteRule ^ban/([^/]+)/([^/]+)/([^/]+)$ ban.php?username=$1&time=$2&format=$3
-RewriteRule ^ban/([^/]+)/([^/]+)$ ban.php?username=$1&time=$2
-RewriteRule ^ban/([^/]+)$ ban.php?username=$1&time=$2&format=$3
-
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{DOCUMENT_ROOT}/$1\.php -f
 RewriteRule ^([^/]+)/?$ $1.php [L]
@@ -51,3 +47,5 @@ AddType text/css .css
   ExpiresActive On
   ExpiresDefault A60
 </Files>
+
+RewriteRule ^shop/([^/]+)$ shop.php?product-type=$1

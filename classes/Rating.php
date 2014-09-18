@@ -1,13 +1,6 @@
 <?php
-
-
-echo "<p align='center'>Please note the view system is all inside a <b>class</b>. The code needs to be moved outside of the <b>/assets/</b> directory and placed in <b>/classes/</b> directory and the viewing code must be moved into <b>/views/v-rating.php</b> later on.";
-echo "<p align='center'>The <b>.htaccess</b> file needs to allow clean urls on this page along with this system been locked to only users who have <b>admin</b> access on the site.";
-
-echo "<hr>";  // SECTION ONE - STORE THE SQL DATA IN AN ARRAY
-
-
-
+// include the configs / constants for the database connection
+include_once("../config/db.php");
 
 // Set's defined names into connection variable to work with the more securer PDO connection
 $userdb = DB_USER;
@@ -31,17 +24,7 @@ try {
 
 	// Parse returned data, and displays them
 	while($row = $result->fetch(PDO::FETCH_ASSOC)) {
-		/* For testing purposes only
-		echo "<div class='col-md-1'>";
-		echo "ID   : " . $row['rating_id'] . "<br>";
-		echo "USER : " . $row['rating_user_id'] . "<br>";
-		echo "ITEM : " . $row['rating_store_id'] . "<br>";
-		echo "SCORE: " . $row['rating_amount'] . "<br>";
-		*/
 		$sqlIntoArray[ "STORE PRODUCT NUMBER " . $row['rating_store_id'] ] ["rating " . $row['rating_id']] = $row['rating_amount'];
-		/* For testing purposes only
-		echo "</div>";
-		*/
 	}
 	// Disconnect
 	$conn = null;
@@ -50,20 +33,6 @@ try {
 catch(PDOException $e) {
 	echo $e->getMessage();
 }
-
-// Returns all the data in every array (for testing only)
-print "<pre>";
-print_r($sqlIntoArray);
-print "</pre>";
-
-
-
-
-
-echo "<hr>"; // SECTION TWO - CREATING THE AVERAGES
-
-
-
 
 
 // Creates the production array of which is later queried to display on the store
@@ -91,32 +60,8 @@ while($productArray <= $amountofProducts) {
 	$productArray++;
 } 
 
-
-// Returns all the data in every array (for testing only)
-print "<pre>";
-print_r($finalAverageRating);
-print "</pre>";
-
-
-
-
-echo "<hr>"; // SECTION THREE - MAKING THE GET REQUESTS
-
-
+// Selects the product from the URL
 $selectAverage = $_GET['product'];
-
-
-echo "<h3 align='center'> The average rating for product <b>" . $selectAverage . "</b> is <b>" . $finalAverageRating["Product " . $selectAverage] . "</b> stars.<br>";
-echo "<p>";
-$starsCounter = 0;
-while($starsCounter <= $finalAverageRating["Product " . $selectAverage]) {
-	echo "<span class='fa fa-star'>";
-	$starsCounter++;
-} 
-echo "</p>";
-echo "<br><p align='center'>Please note, half numbers round up to make the product look better.</p>";
-echo "<hr>"; // SECTION FOUR - TESTING AND DEVELOPEMENT
-
 
 
 

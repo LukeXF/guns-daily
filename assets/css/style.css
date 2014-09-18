@@ -968,3 +968,48 @@ img.feedback {
 .list-group-item {
 	text-transform: uppercase;
 }
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////
+	STORE STYLING
+//////////////////////////////////// */
+.account-avatar {
+border-radius: 10%;
+margin-top: -9px;
+margin-bottom: -4px;
+}
+
+a.logout {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	color: #999;
+	text-transform: uppercase;
+	margin-top: 5px;
+	display: block;
+}
+
+img.avatar {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 80%;
+	margin-top: -15px;
+	margin-bottom: -18px;
+	border-radius: 10%;
+}
+
+.form-box > h5 > a {
+	color: #0058B1;
+	display: block;
+	margin-left: 29px;
+	margin-top: -7px;
+	text-transform: uppercase;
+}

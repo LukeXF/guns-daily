@@ -15,3 +15,8 @@ define("DB_HOST", "localhost");
 define("DB_NAME", "GunsDaily");
 define("DB_USER", "GunsDaily");
 define("DB_PASS", "57BSBTEtrrmKfSbF");
+
+	// creates an varible to display the fully true url of the web page
+	$url = explode('.', $_SERVER['SERVER_NAME']);
+	$fullUrl = "http://" . $url[0] . "." . $url[1] . "." . "net/";
+?>

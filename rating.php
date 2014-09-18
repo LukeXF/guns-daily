@@ -1,11 +1,12 @@
 <?php 
-    // Load header
-    include './assets/header.php';
-
     // include the configs / constants for the database connection
     require_once("config/db.php");
+    // Load header
+    include './assets/header.php';
     // load the login class
     require_once("classes/Login.php");
+    // load the rating class
+    require("classes/Rating.php");
     // Process the page loading
     require("classes/ProcessPage.php");
 
@@ -15,17 +16,10 @@
     // Includes slider
     require './assets/slider.php';
 
-?>
 
-<div class="container" style="margin-top:50px;">
-    <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-            <?php include './assets/store-rating.php'; ?>
-        </div>
-    </div>
-</div>
+    // Views
+    include './views/v-rating.php';
 
-<?php  
     // Load footer
     include("assets/footer.php");
 ?>

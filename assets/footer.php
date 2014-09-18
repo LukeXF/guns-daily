@@ -17,9 +17,9 @@
 			<div class="col-md-6 footer-right">
 				<h5>
 					<a href="/">Home</a>
-					<a href="faq">FAQ</a>
-					<a href="stats">Statistics</a>
-					<a href="contact">Contact</a>
+					<a href="<?php echo $fullUrl; ?>faq">FAQ</a>
+					<a href="<?php echo $fullUrl; ?>stats">Statistics</a>
+					<a href="<?php echo $fullUrl; ?>contact">Contact</a>
 				</h5>
 				<h3>
 					<a href=""><i class="fa fa-copyright fa-2x"> Guns Daily 2014</i></a>
