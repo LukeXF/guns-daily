@@ -24,7 +24,7 @@
 				<div class="col-md-12">
 					<div class="row">
 						<div class="col-md-6">
-							<input type="button" class="form-button green" value="Profile" onClick="parent.location='<?php echo $fullUrl; ?>/profile'">
+							<input type="button" class="form-button green" value="Profile" onClick="parent.location='<?php echo $fullUrl; ?>account'">
 						</div>
 						<div class="col-md-6">
 							<input type="button" class="form-button red  " value="Home"    onClick="parent.location='<?php echo $fullUrl; ?>'" style="margin-right: 10px; float: left !important;">

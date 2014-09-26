@@ -12,11 +12,11 @@
 	<meta name="author" content="Luke Brown">
 	<meta charset="utf-8">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700|Viga|Courgette|Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	<link rel="shortcut icon" href="<?php echo $fullUrl; ?>assets/img/icon.png" />
 
 	<link rel="stylesheet" href="<?php echo $fullUrl; ?>assets/css/bootstrap.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo $fullUrl; ?>assets/css/style.css">
 
 	<title>slippry demo</title>

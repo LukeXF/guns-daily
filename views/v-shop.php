@@ -5,8 +5,7 @@
 
 				<div class="col-md-3">
 						<p class="lead">Gunsdaily Main Store</p>
-						<div class="list-group">
-							<?php 
+s							<?php 
 								$categoryCounter = 0;
 
 								$age=array("all","accessories","apparel","t-shirt");
@@ -91,7 +90,9 @@
 										echo "		</div>";
 										echo "		<div class='ratings'>";
 										echo "			<p class='pull-right'>" . count($sqlIntoArray["STORE PRODUCT NUMBER " . $row['store_id']]) . " reviews</p>";
-										echo "			<p>";				
+										echo "			<p>";
+
+										// Creates the stars, ceil rounds up decimal				
 										$starsCounter = 1;
 										while($starsCounter <= ceil($finalAverageRating["Product " . $row['store_id']])) {
 											echo "<span class='fa fa-star'></span>";

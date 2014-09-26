@@ -7,6 +7,8 @@
     require_once("classes/Login.php");
     // Process the page loading
     require("classes/ProcessPage.php");
+    // load the ordering class
+    require_once("classes/Orders.php");
 
     // Load navbar
     include './assets/navbar.php';

@@ -40,8 +40,6 @@
 
 	}
 
-
-
 	// UUID Check
 //	$uuidLength = $_SESSION['user_uuid'];
 //	if (strlen($uuidLength) > 0) {

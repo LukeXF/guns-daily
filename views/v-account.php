@@ -39,7 +39,7 @@
 		<div class="col-md-3">
 			<p class="form">
 				<label class="et_pb_contact_form_label">Last Name</label>
-				<input type="text" class="input et_pb_contact_name" readonly=readonly placeholder="coming soon" name="et_pb_contact_name">
+				<input type="text" class="input et_pb_contact_name" readonly=readonly placeholder="<?php echo $_SESSION['user_last'];?>" name="et_pb_contact_name">
 			</p>
 		</div>
 		<div class="col-md-5">
@@ -65,5 +65,45 @@
 		</div>
 
 	</div>
+
+
+	<hr>
+
+
+	<div class="row">
+		<h3>Your orders</h3>
+		<!-- <div class="col-md-6">
+			<pre>
+				<?php // print_r($orderArray); ?>
+			</pre>
+		</div> -->
+		<!--<div class="col-md-6">
+			<pre>
+				<?php // print_r($productsInArray); ?>
+			</pre>
+		</div>-->
+		<div class="col-md-12">
+			<pre>
+				<?php print_r($finalOrderList); ?>
+			</pre>
+		</div>
+
+	</div>
+	<div class="row" style="margin-top:30px;">
+		<div class="col-md-4">
+			<p class="form">
+				<label class="et_pb_contact_form_label">Account Type</label>
+				<input type="text" class="input et_pb_contact_name" readonly=readonly placeholder="Business Account" name="et_pb_contact_name">
+			</p>
+		</div>
+		<div class="col-md-4">
+			<p class="form">
+				<label class="et_pb_contact_form_label">Date Registered</label>
+				<input type="text" class="input et_pb_contact_name" readonly=readonly placeholder="coming soon" name="et_pb_contact_name">
+			</p>
+		</div>
+
+	</div>
+
 
 </div>

@@ -74,7 +74,7 @@ class Login
 
                 // database query, getting all the info of the selected user (allows login via email address in the
                 // username field)
-                $sql = "SELECT user_name, user_email, user_password_hash, user_uuid
+                $sql = "SELECT user_id, user_name, user_email, user_password_hash, user_last
                         FROM users
                         WHERE user_name = '" . $user_name . "' OR user_email = '" . $user_name . "';";
                 $result_of_login_check = $this->db_connection->query($sql);
@@ -90,9 +90,10 @@ class Login
                     if (password_verify($_POST['user_password'], $result_row->user_password_hash)) {
 
                         // write user data into PHP SESSION (a file on your server)
+                        $_SESSION['user_id'] = $result_row->user_id;
                         $_SESSION['user_name'] = $result_row->user_name;
                         $_SESSION['user_email'] = $result_row->user_email;
-                        $_SESSION['user_uuid'] = $result_row->user_uuid;
+                        $_SESSION['user_last'] = $result_row->user_last;
                         $_SESSION['user_login_status'] = 1;
 
                     } else {
@@ -104,63 +105,6 @@ class Login
             } else {
                 $this->errors[] = $openingAlert ."Database connection problem." . $closingAlert;
             }
-        }
-    }
-
-
-    /**
-     * get player information from a get request
-     */
-    private function getPlayerRequest()
-    {
-        // Loads error messages containment
-        $openingAlert = "<div style='text-align:center;' class='container'><div class='row'><div class='col-md-4 col-md-offset-4'><div class='alert alert-danger center' role='alert'>";
-        $closingAlert = "</div></div></div></div>";
-
-        // create a database connection, using the constants from config/db.php (which we loaded in index.php)
-        $this->db_connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-
-        // change character set to utf8 and check it
-        if (!$this->db_connection->set_charset("utf8")) {
-            $this->errors[] = $this->db_connection->error;
-        }
-
-        // if no connection errors (= working database connection)
-        if (!$this->db_connection->connect_errno) {
-
-            // Sets the $_GET information to a variable
-            //  http://demo.luke.sx/slashcraft?user=DiamondXF
-
-            // escape the POST stuff
-            $getUser = $this->db_connection->real_escape_string($_GET['user']);
-
-            // database query, getting all the info of the selected user
-            $sql = "SELECT *
-                    FROM users
-                    WHERE user_name = '" . $getUser . "';";
-            $result_of_user_select = $this->db_connection->query($sql);
-
-            // if this user exists
-            if ( $result_of_user_select->num_rows == 1) {
-
-                // get result row (as an object)
-                $result_row = $result_of_user_select->fetch_object();
-
-                // using PHP 5.5's password_verify() function to check if the provided password fits
-                // the hash of that user's password
-
-                    // write user data into PHP SESSION (a file on your server)
-                    $_SESSION['user_get_name'] = $result_row->user_name;
-                    $_SESSION['user_get_email'] = $result_row->user_email;
-                    $_SESSION['user_get_uuid'] = $result_row->user_uuid;
-                    $_SESSION['user_get_confirm'] = $result_row->user_confirm;
-
-                
-            } else {
-                $this->errors[] = $openingAlert . "This user does not exist." . $closingAlert;
-            }
-        } else {
-            $this->errors[] = $openingAlert . "Database connection problem." . $closingAlert;
         }
     }
 
