@@ -49,6 +49,7 @@ if ($login->isUserLoggedIn() == true) {
 	        $productsInArray[ "Content " . $row2['content_id'] ] ["Product"]          = $row2['content_stock_id'];
 	        $productsInArray[ "Content " . $row2['content_id'] ] ["Quantity"]         = $row2['content_quantity'];
 	        $productsInArray[ "Content " . $row2['content_id'] ] ["For User"]         = $row2['user_id'];
+	        $productsInArray[ "Content " . $row2['content_id'] ] ["Store Price"]         = $row2['store_price'];
 		    
 		}
 		// Disconnect
@@ -119,6 +120,10 @@ if ($login->isUserLoggedIn() == true) {
 				just going on and on and on at like 100,000 line of output code per second
 				like it did for three day straight.
 			*/
+
+			// Sets the product number key
+			$productNumberCounter = 0;
+
 			while ($productsInOrderCounter < $productsCounter) {
 
 				/* 
@@ -131,15 +136,23 @@ if ($login->isUserLoggedIn() == true) {
 					// Loads the product number from the shop and the amount ordered into a variable.
 					$productNumber = ($productsInArray[$keysProductsArray[$productsInOrderCounter] ]["Product"]);
 					$productAmount = ($productsInArray[$keysProductsArray[$productsInOrderCounter] ]["Quantity"]);
+					$productPrice = ($productsInArray[$keysProductsArray[$productsInOrderCounter] ]["Store Price"]);
 
 					// Simply places the product info into the nested product array
-					$finalOrderList[ 'Order ' . $counterforOrders ] ["ProductInfo"] ["Product " . $productNumber] ["Product Number"] = $productNumber;
-					$finalOrderList[ 'Order ' . $counterforOrders ] ["ProductInfo"] ["Product " . $productNumber] ["Quantity"] = $productAmount;
+					$finalOrderList[ 'Order ' . $counterforOrders ] ["ProductInfo"] ["Product " . $productNumberCounter] ["Product Number"] = $productNumber;
+					$finalOrderList[ 'Order ' . $counterforOrders ] ["ProductInfo"] ["Product " . $productNumberCounter] ["Quantity"] = $productAmount;
+					$finalOrderList[ 'Order ' . $counterforOrders ] ["ProductInfo"] ["Product " . $productNumberCounter] ["Price"] = $productPrice;
+
+					// Increments the product key number
+					$productNumberCounter++;
 				}
 
 				// This line wasted three days of my life for missing it out.
 				$productsInOrderCounter++;
 			}
+			
+			// Resets the product key number for the next order.
+			$productNumberCounter = 0;
 
 		// Increments the final order array counter
 		$counterforOrders++;

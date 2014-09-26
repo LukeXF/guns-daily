@@ -9,6 +9,8 @@
     require("classes/ProcessPage.php");
     // load the ordering class
     require_once("classes/Orders.php");
+    // load the shop class
+    require_once("classes/Shop.php");
 
     // Load navbar
     include './assets/navbar.php';

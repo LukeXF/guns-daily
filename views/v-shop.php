@@ -5,7 +5,7 @@
 
 				<div class="col-md-3">
 						<p class="lead">Gunsdaily Main Store</p>
-s							<?php 
+							<?php 
 								$categoryCounter = 0;
 
 								$age=array("all","accessories","apparel","t-shirt");
@@ -41,7 +41,6 @@ s							<?php
 									$categoryCounter++;
 								}
 							?>
-						</div>
 				</div>
 
 				<div class="col-md-9">
@@ -130,12 +129,12 @@ s							<?php
 								// If they select an empty category display error message
 								echo $categoryEmpty;
 							?>
-								<div class="col-sm-4 col-lg-4 col-md-4">
-										<h4><a href="#">Have a suggestion for us?</a>
-										</h4>
-										<p>We are always looking to offer the best range of apparel and merchandise. Do you have a great idea for us? Tell us and get a discount if it goes live!</p>
-										<a class="form-button green small" style="float:left !important" target="_blank" href="">Submit Suggestion</a>
-								</div>
+							<div class="col-sm-4 col-lg-4 col-md-4">
+									<h4><a href="#">Have a suggestion for us?</a>
+									</h4>
+									<p>We are always looking to offer the best range of apparel and merchandise. Do you have a great idea for us? Tell us and get a discount if it goes live!</p>
+									<a class="form-button green small" style="float:left !important" target="_blank" href="">Submit Suggestion</a>
+							</div>
 
 						</div>
 
