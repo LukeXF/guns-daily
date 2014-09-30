@@ -18,5 +18,6 @@ define("DB_PASS", "57BSBTEtrrmKfSbF");
 
 	// creates an varible to display the fully true url of the web page
 	$url = explode('.', $_SERVER['SERVER_NAME']);
-	$fullUrl = "http://" . $url[0] . "." . $url[1] . "." . "net/";
+	//	$fullUrl = "http://" . $url[0] . "." . $url[1] . "." . "net/";
+	$fullUrl = "http://dev.gunsdaily.net/";
 ?>

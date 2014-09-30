@@ -1,19 +1,13 @@
 <?php
 	// Sets the values for the navbar
 	$navbar = array(
-		"Home" =>   array(
+		"Dashboard" =>   array(
 			"active" => "",
-			"url" => "http://dev.gunsdaily.net/",
+			"url" => "//admin.gunsdaily.net/",
 			"submenu" => array()
 		),
 
-		"Instagram" =>   array(
-			"active" => "",
-			"url" => "//instagram.com/gunsdaily1",          
-			"submenu" => array()
-		),
-
-		"shop" =>  array(
+		"orders" =>  array(
 			"active" => "",
 			"url" => "",          
 			"submenu" => array()
@@ -25,9 +19,15 @@
 			"submenu" => array()
 		),
 
-		"contact" => array(
+		"settings" => array(
 			"active" => "",
 			"url" => "",          
+			"submenu" => array()
+		),
+
+		"Main Site" => array(
+			"active" => "",
+			"url" => $fullUrl,          
 			"submenu" => array()
 		)
 

@@ -1,3 +1,15 @@
+<style type="text/css">
+    #top-nav {
+        background: #2c3e50 !important;
+    }
+    .navbar .nav > li > a {
+        color: white !important;
+        padding: 6px 15px 9px !important;
+    }
+    #footer {
+		margin-bottom: -200px;
+	}
+</style>
 <div class="page-wrap">
 	<div id="top-nav" class="navbar navbar-fixed-top navbar-default">
 		<div class="container">
@@ -7,7 +19,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/"><img src="<?php echo $fullUrl; ?>assets/img/logo.png" alt="hi"  style="width:150px;height:35px; opacity:0.5;"></a>
+				<a class="navbar-brand" href="/"><img src="<?php echo $fullUrl; ?>../assets/img/logo-invert.png" alt="hi"  style="width:150px;height:35px; opacity:0.8;"></a>
 				
 				<div class="collapse navbar-collapse">
 					<ul class="nav pull-right navbar-nav">
@@ -78,7 +90,7 @@
 									}
 								}
 							?>
-						<li><a href="<?php echo $fullUrl; ?>account.php" class="download" data-spy="affix" data-offset-top="450">
+						<li><a href="/" class="download" data-spy="affix" data-offset-top="450">
 							<?php echo $navlogin; ?>
 						</a></li>
 					</ul>

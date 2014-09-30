@@ -36,7 +36,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/collapse.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/transition.min.js"></script>
 
-	<script src="assets/js/application.js"></script>
+	<script src="<?php echo $fullUrl ?>assets/js/application.js"></script>
 	<script>$("body").data("page", "frontpage");</script>
 
 

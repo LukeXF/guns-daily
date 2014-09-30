@@ -12,7 +12,7 @@ body {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 22px;
 	color: #869690;
-	background-color: #ffffff;
+	background-color: #fff;
 	/* Dev mode :P */
 	/* background-color: #444; */
 }
@@ -28,6 +28,12 @@ html, body {
 /* ////////////////////////////////////
 	NAVBAR STYLING
 //////////////////////////////////// */
+
+
+li.current > a {
+	font-weight: bolder !important;
+	margin-left: -3px !important;
+}
 
 .navbar .nav > li > a {
 float: none;
@@ -929,6 +935,11 @@ img.feedback {
     white-space: nowrap;
 }
 
+.caption > h4 > i {
+	font-size: 13px;
+	color: #707070;
+}
+
 .thumbnail img {
     width: 100%;
 }
@@ -1087,4 +1098,8 @@ img.avatar {
 	margin-left: -31px;
 	border-bottom-right-radius: 4px !important;
 	border-bottom-left-radius: 0px !important;
+}
+
+.total-price {
+	
 }

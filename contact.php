@@ -8,6 +8,8 @@
     // Process the page loading
     require("classes/ProcessPage.php");
 
+    $activeTab = "contact";
+    
     // Load navbar
     include './assets/navbar.php';
 

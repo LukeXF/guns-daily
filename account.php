@@ -7,11 +7,15 @@
     require_once("classes/Login.php");
     // Process the page loading
     require("classes/ProcessPage.php");
-    // load the ordering class
-    require_once("classes/Orders.php");
+    // load the shop class
+    require_once("classes/Rating.php");
     // load the shop class
     require_once("classes/Shop.php");
+    // load the ordering class
+    require_once("classes/Orders.php");
 
+    $activeTab = "Login / Register";
+    
     // Load navbar
     include './assets/navbar.php';
 
@@ -29,4 +33,5 @@
 
     // Load footer
     include("assets/footer.php");
+    echo "<div style='margin-bottom: -500px;'></div>";
 ?>

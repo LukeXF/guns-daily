@@ -4,7 +4,7 @@
 		<div class="col-md-2" style="padding-top:20px;">
 			<div class="avatar">
 				<img class="avatar" src="<?php echo $grav_url; ?>"><br>
-				<a class="logout" href="account.php?logout">Logout</a>
+				<a class="logout" href="?logout">Logout</a>
 			</div>
 		</div>
 
@@ -27,7 +27,7 @@
 		</div>
 
 	</div>
-	<hr>
+	<!--<hr>
 	<div class="row">
 		<h3>Your Details</h3>
 		<div class="col-md-3">
@@ -67,12 +67,12 @@
 	</div>
 
 
-	<hr>
+	<hr>-->
 
 
-	<div class="row">
+	<!--<div class="row">
 		<h3>Your Orders</h3>
-		<!--<div class="col-md-6">
+		<div class="col-md-6">
 			<pre>
 				<?php // print_r($orderArray); ?>
 			</pre>
@@ -92,7 +92,7 @@
 			</pre>
 		</div>-->
 
-		<div class="col-md-12">
+		<!--<div class="col-md-12">
 			<?php
 				reset($finalOrderList);
 
@@ -225,5 +225,5 @@
 			?>
 
 
-	</div>
+	</div>-->
 </div>

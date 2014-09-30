@@ -49,7 +49,7 @@ if ($login->isUserLoggedIn() == true) {
 	        $productsInArray[ "Content " . $row2['content_id'] ] ["Product"]          = $row2['content_stock_id'];
 	        $productsInArray[ "Content " . $row2['content_id'] ] ["Quantity"]         = $row2['content_quantity'];
 	        $productsInArray[ "Content " . $row2['content_id'] ] ["For User"]         = $row2['user_id'];
-	        $productsInArray[ "Content " . $row2['content_id'] ] ["Store Price"]         = $row2['store_price'];
+	        $productsInArray[ "Content " . $row2['content_id'] ] ["Store Price"]      = $row2['store_price'];
 		    
 		}
 		// Disconnect

@@ -7,10 +7,10 @@
     require_once("classes/Login.php");
     // load the rating class
     require("classes/Rating.php");
-    // load the shop class
-    require_once("classes/Shop.php");
     // Process the page loading
     require("classes/ProcessPage.php");
+
+    $activeTab = "shop";
 
     // Load navbar
     include './assets/navbar.php';

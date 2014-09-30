@@ -43,7 +43,7 @@
 		<input type="hidden" id="_wpnonce-et-pb-contact-form-submitted" name="_wpnonce-et-pb-contact-form-submitted" value="22e23944ed"><input type="hidden" name="_wp_http_referer" value="/contact/">
 	</form>
 </div>
-<div class="container" id="about-guns">
+<div class="container" id="about-guns" style="margin-bottom:-30px;">
 	<div class="row about-guns">
 		<div class="col-md-6">			
 			<h2>More Info</h2>

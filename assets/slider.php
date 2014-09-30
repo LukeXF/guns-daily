@@ -3,7 +3,7 @@
 			<ul id="demo1">
 				<li><a href="#slide1"><img src="<?php echo $fullUrl; ?>assets/img/1.jpg" alt="Guns Daily - No politics, just gun."></a></li>
 				<li><a href="#slide2"><img src="<?php echo $fullUrl; ?>assets/img/2.jpg" alt="Be sure to folow us on  <a target='_blanks' href='http://instagram.com/gunsdaily1'>Instagram</a>."></a></li>
-				<li><a href="#slide3"><img src="<?php echo $fullUrl; ?>assets/img/3.jpg" alt="Intested in <a target='_blanks' href='policy'>Advertising</a> with us?"></a></li>
+				<li><a href="#slide3"><img src="<?php echo $fullUrl; ?>assets/img/3.jpg" alt="Interested in <a target='_blanks' href='policy'>Advertising</a> with us?"></a></li>
 			</ul>
 			</article>
 		</section>		
