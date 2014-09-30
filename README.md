@@ -3,8 +3,9 @@ Gunsdaily.com
 
 This is the coding documentation for my A2 Computing F454 A-level coursework.
 
-The structure is based around a plain PHP MVC framework to allow a multi-purpose clean website for a real work end client.
-Main features include:
+The structure is based around a plain PHP MVC framework to allow for a multi-purpose, clean website for a real world end client.
+
+The Main features include:
 ---------
  - **Dynamic homepage to load social posts.**
     - [X] Clean modern styling across the whole site.
