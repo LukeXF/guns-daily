@@ -3,7 +3,7 @@
 	$navbar = array(
 		"Home" =>   array(
 			"active" => "",
-			"url" => "http://dev.gunsdaily.net/",
+			"url" => "",
 			"submenu" => array()
 		),
 

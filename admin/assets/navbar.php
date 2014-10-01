@@ -9,6 +9,9 @@
     #footer {
 		margin-bottom: -200px;
 	}
+	#top-nav.navbar .nav > li > a.download-on {
+		background-color: transparent !important;
+	}
 </style>
 <div class="page-wrap">
 	<div id="top-nav" class="navbar navbar-fixed-top navbar-default">

@@ -82,26 +82,32 @@ class Login
                 // if this user exists
                 if ($result_of_login_check->num_rows == 1) {
 
-                    // get result row (as an object)
-                    $result_row = $result_of_login_check->fetch_object();
-
-                    // using PHP 5.5's password_verify() function to check if the provided password fits
-                    // the hash of that user's password
-                    if (password_verify($_POST['user_password'], $result_row->user_password_hash)) {
-
-                        // write user data into PHP SESSION
-                        $_SESSION['user_id'] = $result_row->user_id;
-                        $_SESSION['user_name'] = $result_row->user_name;
-                        $_SESSION['user_email'] = $result_row->user_email;
-                        $_SESSION['user_last'] = $result_row->user_last;
-                        $_SESSION['user_type'] = $result_row->user_account_type;
-                        $_SESSION['user_date'] = $result_row->user_date_joined;
-                        $_SESSION['user_login_status'] = 1;
+					// get result row (as an object)
+					$result_row = $result_of_login_check->fetch_object();
 						
+					// if thhe user is an admin
+					if ($result_row->user_account_type == 4) {
+					
+						// using PHP 5.5's password_verify() function to check if the provided password fits
+						// the hash of that user's password
+						if (password_verify($_POST['user_password'], $result_row->user_password_hash)) {
 
-                    } else {
-                        $this->errors[] = $openingAlert . "Wrong password. Try again. </div>" . $closingAlert;
-                    }
+							// write user data into PHP SESSION
+							$_SESSION['user_id'] = $result_row->user_id;
+							$_SESSION['user_name'] = $result_row->user_name;
+							$_SESSION['user_email'] = $result_row->user_email;
+							$_SESSION['user_last'] = $result_row->user_last;
+							$_SESSION['user_type'] = $result_row->user_account_type;
+							$_SESSION['user_date'] = $result_row->user_date_joined;
+							$_SESSION['user_login_status'] = 1;
+							
+
+						} else {
+							$this->errors[] = $openingAlert . "Wrong password. Try again. </div>" . $closingAlert;
+						}
+					} else {
+						$this->errors[] = $openingAlert . "This user is not an admin" . $closingAlert;
+					}
                 } else {
                     $this->errors[] = $openingAlert . "This user does not exist." . $closingAlert;
                 }

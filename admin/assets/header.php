@@ -13,21 +13,21 @@
 			"submenu" => array()
 		),
 
+		"users" =>  array(
+			"active" => "",
+			"url" => "",          
+			"submenu" => array()
+		),
+
 		"advertise" => array(
 			"active" => "",
 			"url" => "",          
 			"submenu" => array()
 		),
 
-		"settings" => array(
+		"products" => array(
 			"active" => "",
 			"url" => "",          
-			"submenu" => array()
-		),
-
-		"Main Site" => array(
-			"active" => "",
-			"url" => $fullUrl,          
 			"submenu" => array()
 		)
 
@@ -37,7 +37,7 @@
 <html lang="en">
 <head>
 
-	<title>Guns Daily</title>
+	<title>Guns Daily Admin</title>
 
 <!-- ////////////////////////////////////
 	HEADER LINKS
@@ -53,9 +53,8 @@
 	<link rel="stylesheet" href="<?php echo $fullUrl; ?>assets/css/bootstrap.css">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo $fullUrl; ?>assets/css/style.css">
-
-	<title>slippry demo</title>
 	<script src="<?php echo $fullUrl; ?>assets/js/slippry.min.js"></script>
+	<script src="http://listjs.com/no-cdn/list.js"></script>
 	<script src="//use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" Content-Type:"text/css" href="<?php echo $fullUrl; ?>assets/css/slippry.css">

@@ -10,7 +10,7 @@
     // Loads all the admin stats
     require("../classes/AdminOverview.php");
 
-    $activeTab = "Dashboard";
+    $activeTab = "users";
 
     // Load navbar
     include './assets/navbar.php';
@@ -21,7 +21,7 @@
 
     // if logged in display content
     if ($login->isUserLoggedIn() == true) {
-        include("views/a-index.php");
+        include("views/a-users.php");
     } else {
         include("views/a-signin.php");
     }

@@ -53,14 +53,30 @@
 	<div class="row" style="margin-top:30px;">
 		<div class="col-md-4">
 			<p class="form">
+				<?php
+					switch ($_SESSION['user_type']) {
+						case "0": $accountType = "Disabled Account";	break;
+						case "1": $accountType = "Normal Account (Client";	break;
+						case "2": $accountType = "Business Account";	break;
+						case "3": $accountType = "Joint Account (Business & Shop)";	break;
+						case "4": $accountType = "Admin Account";	break;
+						default: $accountType = $_SESSION['user_type']; 
+					}
+				?>
 				<label class="et_pb_contact_form_label">Account Type</label>
-				<input type="text" class="input et_pb_contact_name" readonly=readonly placeholder="Business Account" name="et_pb_contact_name">
+				<input type="text" class="input et_pb_contact_name" readonly=readonly value="<?php echo $accountType; ?>" name="et_pb_contact_name">
 			</p>
 		</div>
 		<div class="col-md-4">
 			<p class="form">
+				<?php
+					// Sets the date joined into a human format
+					$userjoined = strtotime($_SESSION['user_date']);
+					$userjoined_1 = date( 'l jS F Y', $userjoined );
+					$userjoined_2 = date( 'H:ia', $userjoined );
+				?>
 				<label class="et_pb_contact_form_label">Date Registered</label>
-				<input type="text" class="input et_pb_contact_name" readonly=readonly placeholder="coming soon" name="et_pb_contact_name">
+				<input type="text" class="input et_pb_contact_name" readonly=readonly value="<?php echo $userjoined_1 . " " . $userjoined_2; ?>" name="et_pb_contact_name">
 			</p>
 		</div>
 
@@ -82,15 +98,15 @@
 				<?php // print_r($productsInArray); ?>
 			</pre>
 		</div>-->
-		<!--<div class="col-md-6">
+		<div class="col-md-6">
 			<pre>
-				<?php // print_r($finalOrderList);
+				<?php print_r($finalOrderList);
 
 				$amountOfProducts = 2;
 				$height = ($amountOfProducts * 130) + 74 . "px";
 				?>
 			</pre>
-		</div>-->
+		</div>
 
 		<div class="col-md-12">
 			<?php
@@ -98,7 +114,6 @@
 
 				// Counts finalOrderList array to stop the while loop going on forever if an error occurs.
 				$countOrders = count($finalOrderList);
-				$countProductOrders2 = count($finalOrderList['Order 2']['ProductInfo']);
 				// Sets the counter to 1 for use in the while loop
 				$displayCounter = 1; 
 
@@ -121,7 +136,7 @@
 					$displayProductCounter2 = 0; // The total order amount counter
 					$displayProductCounter = 0; // The product display counter
 
-					// Sets the value fo the totalPriceOrder array for later use and later calculation
+					// Sets the value of the totalPriceOrder array for later use and later calculation
 					while ($displayProductCounter2 < $countProductOrders) { 
 						$p_price2 = $finalOrderList['Order ' . $displayCounter]['ProductInfo']['Product ' . $displayProductCounter2]['Price'];
 						// Adds to the total price order array the price of each product for later displaying
@@ -183,8 +198,9 @@
 					echo "<div class='thumbnail account-overview account-right' style='min-height:" . $height . "'>";
 					echo "<div class='title row'>";
 
+					// Creates date for the order array
 					$phpdate = strtotime( $o_date );
-					$o_date2 = date( 'D d', $phpdate );
+					$o_date2 = date( 'l jS', $phpdate );
 					$o_date3 = date( 'H:ia', $phpdate );
 					echo "<div class='col-md-12 title-right'>Placed <b>" . $o_date3 . "</b> - <b>" . $o_date2 . " " . date('M') . "</b></div>";
 					echo "</div>";
