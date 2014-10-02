@@ -1,6 +1,9 @@
 Gunsdaily.com
 ==========
 
+![Image](http://root-image.luke.sx/b959.png)
+
+
 This is the coding documentation for my A2 Computing F454 A-level coursework.
 
 The structure is based around a plain PHP MVC framework to allow for a multi-purpose, clean website for a real world end client.
