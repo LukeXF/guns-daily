@@ -1,33 +1,34 @@
 <?php
+	date_default_timezone_set('UTC');
 	// Sets the values for the navbar
 	$navbar = array(
 		"Dashboard" =>   array(
 			"active" => "",
-			"url" => "//admin.gunsdaily.net/",
+			"url" => "index.php",
 			"submenu" => array()
 		),
 
 		"orders" =>  array(
 			"active" => "",
-			"url" => "",          
+			"url" => "orders.php",          
 			"submenu" => array()
 		),
 
 		"users" =>  array(
 			"active" => "",
-			"url" => "",          
+			"url" => "users.php",          
 			"submenu" => array()
 		),
 
 		"advertise" => array(
 			"active" => "",
-			"url" => "",          
+			"url" => "advertise.php",          
 			"submenu" => array()
 		),
 
 		"products" => array(
 			"active" => "",
-			"url" => "",          
+			"url" => "products.php",          
 			"submenu" => array()
 		)
 
@@ -47,7 +48,9 @@
 	<meta name="author" content="Luke Brown">
 	<meta charset="utf-8">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700|Viga|Courgette|Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<link rel="shortcut icon" href="<?php echo $fullUrl; ?>assets/img/icon.png" />
 
 	<link rel="stylesheet" href="<?php echo $fullUrl; ?>assets/css/bootstrap.css">

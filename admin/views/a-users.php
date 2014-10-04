@@ -79,6 +79,7 @@
 						$date1 = strtotime( $totalUsers["User " . $totalUserCounter]['user_date'] );
 						$date2 = date( 'l jS F Y', $date1 );
 						// $date3 = date( 'H:ia', $date1 );
+						$date3 = '';
 						echo "<td class='user_date'>" . $date2 . $date3 . "</td>";
 
 						echo "</tr></a>";

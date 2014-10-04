@@ -53,3 +53,7 @@ AddType text/css .css
 </Files>
 
 RewriteRule ^shop/([^/]+)$ shop.php?product-type=$1
+
+
+php_flag  display_errors        on
+php_value error_reporting       2039

@@ -9,8 +9,6 @@
     require("../classes/ProcessPage.php");
     // Loads all the admin stats
     require("../classes/AdminOverview.php");
-    // load the rating class
-    require_once("../classes/Rating.php");
     // load the shop class
     require_once("../classes/Shop.php");
     // load the ordering class
@@ -27,7 +25,7 @@
 
     // if logged in display content
     if ($login->isUserLoggedIn() == true) {
-        include("views/a-orders.php");
+        include("views/a-orders2.php");
     } else {
         include("views/a-signin.php");
     }

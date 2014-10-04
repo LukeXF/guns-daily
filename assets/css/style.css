@@ -1032,7 +1032,7 @@ img.avatar {
 /* ////////////////////////////////////
 	STORE STYLING
 //////////////////////////////////// */
-.account-overview > .title {
+.account-overview > .title, .modal-header {
 	background-color: #222;
 	padding: 19px;
 	margin-bottom: 5px;
@@ -1040,16 +1040,50 @@ img.avatar {
 	border-top-left-radius: 4px;
 }
 
+.modalorder {
+	display: block;
+	padding: 4px;
+	margin-bottom: 20px;
+	line-height: 1.42857143;
+	background-color: transparent !important;
+	border: 0px solid transparent !important;
+	border-radius: 4px;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
 
-.account-overview > div > .title-right {
+.account-overview > div > .title-right, .close2 {
 	float: right;
 	text-align: right;
 }
 
-.account-overview > div > div > img {
+.thumbnail.account-overview.account-right.overview-modal {
+	margin-right: -15px;
+}
+
+.overview-modal > .title2 {
+	/* margin-left: 10px !important; */
+	background-color: #222;
+	padding: 19px;
+	margin-bottom: 5px;
+	margin: -1px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.close2 {
+	color: #999 !important;
+	margin-top: -7px;
+}
+.account-overview > div > div > img, .force-padding > div > img {
 	margin-top: 25px;
 	border-radius: 4px;
 	margin-left: 20px;
+	margin-left: -20px;
+}
+.modal-body {
+	padding: 0px !important;
 }
 
 .account-overview > .force-padding {
