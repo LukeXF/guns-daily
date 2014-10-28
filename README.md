@@ -1,4 +1,4 @@
-Gunsdaily.com
+Gunsdaily.net
 ==========
 
 ![Image](http://root-image.luke.sx/b959.png)
