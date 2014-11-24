@@ -51,11 +51,11 @@
 					</div>
 					<div class="col-xs-3">
 						<strong><?php echo number_format($tw["favourites"]) . "<br>"; ?></strong><br>
-						Twitter Favourites
+						Twitter Favorites
 					</div>
 					<div class="col-xs-3">
 						<strong><?php echo number_format($total) . "<br>"; ?></strong><br>
-						Total interaction
+						Total interactions
 					</div>
 
 				</div>
@@ -72,7 +72,7 @@
 	<div class="row about-guns">
 		<div class="col-md-6">			
 			<h2>More Info</h2>
-			<p><strong>If you are interested in Sponsoring us here on the website or advertising with us on our instagram or other social media head over our <a href="advertise" target="_blank">Advertise</a> page. If you just want to get ahold of us for any other matter please fill out the form to the left and we will get back to you ASAP. Usually within 24 hours.</strong></p>
+			<p><strong>If you are interested in Sponsoring us here on the website or advertising with us on our Instagram or other social media head over our <a href="advertise" target="_blank">Advertise</a> page. If you just want to get ahold of us for any other matter please fill out the form to the left and we will get back to you ASAP. Usually within 24 hours.</strong></p>
 		</div>
 		<div class="col-md-6">		
 			<h2>About Us</h2>

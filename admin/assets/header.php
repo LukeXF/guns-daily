@@ -4,31 +4,37 @@
 	$navbar = array(
 		"Dashboard" =>   array(
 			"active" => "",
-			"url" => "index.php",
+			"url" => "index",
 			"submenu" => array()
 		),
 
 		"orders" =>  array(
 			"active" => "",
-			"url" => "orders.php",          
+			"url" => "orders",          
 			"submenu" => array()
 		),
 
 		"users" =>  array(
 			"active" => "",
-			"url" => "users.php",          
+			"url" => "users",          
 			"submenu" => array()
 		),
 
 		"advertise" => array(
 			"active" => "",
-			"url" => "advertise.php",          
+			"url" => "advertise",          
 			"submenu" => array()
 		),
 
 		"products" => array(
 			"active" => "",
-			"url" => "products.php",          
+			"url" => "products",          
+			"submenu" => array()
+		),
+
+		"settings" => array(
+			"active" => "",
+			"url" => "settings",          
 			"submenu" => array()
 		)
 

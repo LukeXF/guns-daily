@@ -1,6 +1,6 @@
 <?php
 // include the configs / constants for the database connection
-include_once("../config/db.php");
+include_once("config/db.php");
 
 // Set's defined names into connection variable to work with the more securer PDO connection
 $userdb = DB_USER;

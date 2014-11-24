@@ -1,35 +1,36 @@
 <?php
+    require_once("/var/www/html/luke/demo.luke.sx/gunsdaily.net/admin/config.php");
 	date_default_timezone_set('UTC');
 	
 	// Sets the values for the navbar
 	$navbar = array(
 		"Home" =>   array(
 			"active" => "",
-			"url" => "",
+			"url" => "//dev.gunsdaily.net",
 			"submenu" => array()
 		),
 
-		"Instagram" =>   array(
+		"About Gunsdaily" =>   array(
 			"active" => "",
-			"url" => "//instagram.com/gunsdaily1",          
+			"url" => "about",          
 			"submenu" => array()
 		),
 
-		"shop" =>  array(
+		"Our Store" =>  array(
 			"active" => "",
-			"url" => "",          
+			"url" => "store",
 			"submenu" => array()
 		),
 
-		"advertise" => array(
+		"Advertise With Us" => array(
 			"active" => "",
-			"url" => "",          
+			"url" => "advertise",          
 			"submenu" => array()
 		),
 
-		"contact" => array(
+		"Contact Us" => array(
 			"active" => "",
-			"url" => "",          
+			"url" => "contact",          
 			"submenu" => array()
 		)
 
@@ -56,7 +57,6 @@
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo $fullUrl; ?>assets/css/style.css">
 
-	<title>slippry demo</title>
 	<script src="<?php echo $fullUrl; ?>assets/js/slippry.min.js"></script>
 	<script src="//use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>
 	<meta name="viewport" content="width=device-width">

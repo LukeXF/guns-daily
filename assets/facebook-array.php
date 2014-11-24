@@ -46,7 +46,7 @@
 
 <?php // INSTAGRAM STATS
 
-	$url = 'https://api.instagram.com/v1/users/300541964/?access_token=262351.467ede5.176ab1984b1d47e6b8dea518109d7a5e';
+	$url = 'https://api.instagram.com/v1/users/300541964/?access_token=187585002.bf2d849.8dffbb94e54c4444bca4aa8d397c6639';
 	$api_response = file_get_contents($url);
 	$record = json_decode($api_response);
 
@@ -65,7 +65,7 @@
 ?>
 
 <!-- The hidden code is to check if the Instagram array works -->
-<!-- <?php print_r($ig); ?> -->
+<!--<?php print_r($ig); ?>-->
 
 
 

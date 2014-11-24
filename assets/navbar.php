@@ -1,5 +1,5 @@
 <div class="page-wrap">
-	<div id="top-nav" class="navbar navbar-fixed-top navbar-default">
+	<div id="top-nav" class="navbar navbar-default">
 		<div class="container">
 			<div class="container">
 				<button type="button" class="btn btn-navbar" style="visibility: hidden;" data-toggle="collapse" data-target=".nav-collapse">
@@ -7,10 +7,19 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/"><img src="<?php echo $fullUrl; ?>assets/img/logo.png" alt="hi"  style="width:150px;height:35px; opacity:0.5;"></a>
+				<a class="navbar-brand" href="/"><img src="<?php echo $fullUrl; ?>assets/img/logo.png" alt="hi"></a>
 				
 				<div class="collapse navbar-collapse">
-					<ul class="nav pull-right navbar-nav">
+					<ul class="nav navbar-nav pull-right">
+						<li class=""><a href="account">Your Account</a></li>
+						<li class=""><a href="shop">Your Orders</a></li>
+						<?php echo $navlogin; ?>
+					</ul>
+					<ul class="nav social-bar navbar-nav">
+						<li class=""><a href="//instagram.com/gunsdaily1">Instagram</a></li>
+						<li class=""><a href="//twitter.com/gunsdaily1">Twitter</a></li>
+					</ul>
+					<ul class="nav pull-right navbar-nav lar-nav">
 						<?php
 
 								// Sets the active tab
@@ -70,6 +79,13 @@
 											echo "</ul>";
 										echo "</li>";
 										
+									} elseif ($activeTab = "shop" && empty($url) ){
+										// to fix the .htaccess file that tidies up the shop url.
+										// this allows the shop links to work and external links to work.
+										echo "<li class='" . $class . "'><a href='../$url'>";
+										echo $x;
+										echo "</a></li>";
+
 									} else {
 										// else treat it as a normal tab
 										echo "<li class='" . $class . "'><a href='$url'>";
@@ -78,9 +94,6 @@
 									}
 								}
 							?>
-						<li><a href="<?php echo $fullUrl; ?>account.php" class="download" data-spy="affix" data-offset-top="450">
-							<?php echo $navlogin; ?>
-						</a></li>
 					</ul>
 				</div>
 			</div><!--CONTAINER-->

@@ -31,11 +31,11 @@
 
 	// Navbar logged in status
 	if ($login->isUserLoggedIn() == true) {
-	   $navlogin = "Welcome <b>" . $_SESSION['user_name'] . "&nbsp;</b>&nbsp;<img class='account-avatar' width='30px' src='" . $grav_url . "'>";
+	   $navlogin = "<li><a href='" . $fullUrl . "account.php' class='download' data-spy='affix' data-offset-top='450'>Welcome <b>" . $_SESSION['user_name'] . "&nbsp;</b>&nbsp;<img class='account-avatar' width='30px' src='" . $grav_url . "'></a></li>";
 	   $loginH1DisplayTag = "Welcome <b>" . $_SESSION['user_name'] . "&nbsp;</b>&nbsp;<img class='account-avatar' src='" . $grav_url . "'>";
 
 	} else {
-	    $navlogin = "Login / Register";
+	    $navlogin = "<li><a href='account'>Sign Up</a></li><li><a href='account'>Login</a></li>";
 	    $loginH1DisplayTag  = "Login";
 
 	}

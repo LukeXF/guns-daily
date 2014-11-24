@@ -19,6 +19,8 @@ body {
 
 html, body {
 	height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 *:hover {
@@ -42,12 +44,74 @@ color: #869690;
 text-decoration: none;
 }
 
-#top-nav{
-	border-bottom: 1px solid #e1e6dd;
-	background: #FFF;
-	-webkit-transform: translateZ(0)
-
+/* Set */
+.navbar-default {
+	background-color: black !important;
+	border-color: #e7e7e7;
 }
+
+#top-nav {
+	border-bottom: 0px solid transparent !important;
+	background: url(http://gunmagware.uldev.co/skin/frontend/athlete/default/images/header-bg.jpg);
+	height: 100px;
+	margin: -1px;
+	border-radius: 0px;
+	background-cover: initial;
+	background-position: bottom center;
+	-webkit-transform: translateZ(0);
+	background-size: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* Makes the navbar on the admin page fit */
+.navbar-admin {
+	height: 57px !important;
+}
+.navbar-admin > div > div > a.navbar-brand {
+	background-color: transparent !important;	
+	margin-top: -12px;
+}
+.navbar-admin > div > div > div > ul > li > a {
+	background-color: transparent !important;
+}
+
+/* Sets the navbar image surrounds to fit on the navbar with no hover effect*/
+a.navbar-brand, a.navbar-brand:hover {
+	background: white !important;
+	padding: 25px !important;
+	padding-bottom: 80px !important;
+}
+
+/* applys the postioning effects for the navbar logo to fit inside its contgainer*/
+a.navbar-brand > img {
+	width: 200px;
+	height: 52px;
+}
+
+/* makes the second navbar larger than the first */
+.lar-nav > li > a {
+	font-size: 23px;
+}
+
+.nav > li > a:hover:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	margin-left: 20%;
+	bottom: 0;
+	height: 1px;
+	width: 59%;
+	border-bottom: 1px solid white;
+}
+
+/* Sets the social icons to be postioned in line with the other two navbars */
+.social-bar {
+	position: fixed;
+	margin-left: 285px !important;
+}
+
+
 #top-nav.navbar{
 	margin-bottom: 0px;
 
@@ -60,10 +124,10 @@ text-decoration: none;
 	padding: 6px 12px;
 	margin: 0px;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 100;
 	margin-bottom: 5px;
 	margin-top: -17px;
-
+	color: white;
 	-webkit-transition: background-color 200ms ease;
 	-moz-transition: background-color 200ms ease;
 	-o-transition: background-color 200ms ease;
@@ -105,11 +169,17 @@ text-decoration: none;
 	HEADER STYLING
 //////////////////////////////////// */
 
+/* Sets the image background with a gradient overlay below the slider */
 #header {
-background: #2c3e50;
-padding: 5px 0 5px;
-text-transform: uppercase;
-color: #fff;
+background:
+	linear-gradient(
+		rgba(44, 62, 80, 0.95), 
+		rgba(44, 62, 80, 0.75)), 
+		url(http://subtlepatterns.com/patterns/hixs_pattern_evolution.png);
+	);
+	padding: 5px 0 5px;
+	text-transform: uppercase;
+	color: #fff;
 }
 #header h1{
 	margin-bottom: 10px;
@@ -759,7 +829,8 @@ NO MORE TABLES!! ;)
 .form > input, .form > textarea, .form > select {
 	background-color: #eee;
 	border: none!important;
-	width: 100% !important;
+	width: 95% !important;
+	margin: 5px;
 	-moz-border-radius: 0 !important;
 	-webkit-border-radius: 0 !important;
 	border-radius: 0 !important;
@@ -1283,7 +1354,266 @@ td.text-right {
 }
 
 
+.left {
+	text-align: left;
+}
+
+.center, .middle {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
 input.search {
 	margin-top: -7px;
 	margin-bottom: 10px;
+}
+
+/* Sets the description to display on the admin panel */
+.readonly.form-button.red {
+	width: 50px;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.readonly.form-button:hover {
+	background: transparent !important;
+	border: 2px solid #b22920 !important;
+	padding: 6px 14px 6px 14px !important;
+	cursor: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////
+
+	SETTINGS PAGE FOR DASHBOARD
+
+//////////////////////////////////////////////////// */
+
+/* Positioning for the avatar image */
+.container.dashboard > div > div > .avatar {
+	width: 85px;
+	height: 85px;
+	border-radius: 3px;
+	z-index: 99999999;
+	position: absolute;
+}
+
+/*  */
+.container.dashboard > div > div > .main.dash {
+	color: #ffffff !important;
+	font-weight: 100;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+/* Sets the alignements for the settings navbar */
+ul.nav.navbar-nav.navbar-left.dashnav {
+	display: table;
+	margin: 0 auto;
+	margin-left: 4vw;
+}
+
+/*  */
+.dashnav > li > a > .fa2 {
+	display: table;
+	margin-left: auto;
+	color: #666;
+	margin-right: auto;
+	height: 36px;
+	width: 40px;
+	background-size: 100%;
+}
+
+/*  */
+.div .iconside {
+	display: table;
+	color: #666;
+	height: 38px;
+	width: 41px;
+	margin-top: 5px;
+	background-size: 100%;
+	opacity: 0.7;
+	float: left;
+}
+
+/*  */
+.textside {
+	display: table;
+}
+
+/*  */
+h2.textside {
+	display: table;
+	font-weight: 300;
+	color: #555;
+	margin-top: 8px;
+}
+
+/*  */
+.dashnav > li > a:hover{
+	opacity: 0.8;
+}
+
+/*  */
+.dashnav > li > a {
+	opacity: 0.5;
+}
+
+/*  */
+.dashnav > li {
+	border-right: 1px solid #d5d5d5;
+	border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/*  */
+.dashnav > li > a > span {
+	color: #333;
+	font-weight: 300;
+}
+
+/*  */
+.dashnav > li > a {
+	padding-left: 44px;
+	padding-right: 44px;
+	text-align: center;
+}
+
+/*  */
+.dashnav > li > a.current {
+	opacity: 1;
+}
+
+/*  */
+.left_tab > div > div, .right_tab > div {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+/*  */
+.right_tab {
+	margin: 0px;
+	border-left: white 1px solid;
+}
+
+/*  */
+.left_tab {
+	margin: 0px;
+	border-right: #e5e5e5 1px solid;
+}
+
+/*  */
+span.main {
+	padding: 10px;
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+/*  */
+.right_tab > div > hr {
+	margin-bottom: 10px;
+}
+
+/*  */
+.color {
+	background-color: white;
+	background-position: center bottom;
+	filter: alpha(opacity=30);
+	padding: 50px;
+	border: 1px solid rgba(223, 223, 223, 1) !important;
+	border-radius: 4px;
+
+}
+
+
+/*  */
+.outershadow {
+	-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.07);
+	-moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.07);
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.07);
+	/* background-color: #e8e8e8; */
+	margin-bottom: 25px;
+	border: 1px solid rgba(223, 223, 223, 0.51);
+}
+
+/*  */
+.shadow {
+	-webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.07);
+	-moz-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.07);
+	box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.07);
+	/* background-color: #e8e8e8; */
+	margin-bottom: 25px;
+	border: 1px solid rgba(223, 223, 223, 0.51);
+}
+
+/* Sets the colored background for certain elements*/
+.color.bg1 { background: linear-gradient( rgba(244, 244, 244, 0.85), rgba(219, 219, 219, 0.81) ), url(http://root-image.luke.sx/ab6a.png); }
+.color.bg2 { background: linear-gradient( rgba(244, 244, 244, 0.99), rgba(219, 219, 219, 0.83) ), url(http://root-image.luke.sx/61ff.png); }
+.color.bg3 { background: linear-gradient( rgba(244, 244, 244, 0.85), rgba(219, 219, 219, 0.81) ), url(http://root-image.luke.sx/f8fd.png); }
+
+/* Sets the color on certain elements      */
+.white { background-color: white;           }
+.dark  { background-color: rgb(34, 34, 34); }
+.grey  { background-color: #555;            }
+.cream { background-color: #DBDBDB;         }
+
+/* Sets the icons for the admin panel */
+.fa2.home         { background-image: url('../img/settings-icons/simple45.png'); }
+.fa2.descriptions { background-image: url('../img/settings-icons/small101.png'); }
+.fa2.applydesc    { background-image: url('../img/settings-icons/address15.png'); }
+.fa2.overview     { background-image: url('../img/settings-icons/simple45.png'); }
+.fa2.testimonials { background-image: url('../img/settings-icons/profile4.png'); }
+.fa2.advertising  { background-image: url('../img/settings-icons/currency4.png'); }
+.fa2.billing      { background-image: url('../img/settings-icons/currency4.png'); }
+.fa2.websites     { background-image: url('../img/settings-icons/sphere1.png'); }
+.fa2.apps         { background-image: url('../img/settings-icons/game11.png'); }
+.fa2.news         { background-image: url('../img/settings-icons/letter9.png'); }
+.fa2.support      { background-image: url('../img/settings-icons/question17.png'); }
+.fa2.info         { background-image: url('../img/settings-icons/question17.png'); }
+.fa2.hosting      { background-image: url('../img/settings-icons/coin3.png'); }
+.fa2.profile      { background-image: url('../img/settings-icons/profile4.png'); }
+.fa2.plus 	      { background-image: url('../img/settings-icons/round69.png'); }
+.fa2.tick 	      { background-image: url('../img/settings-icons/round68.png'); }
+.fa2.cross	      { background-image: url('../img/settings-icons/round73.png'); }
+.fa2.time 	      { background-image: url('../img/settings-icons/wall24.png'); }
+.fa2.siteconfig   { background-image: url('../img/settings-icons/settings19.png'); }
+
+
+/* Apply spacing to the settings overview */
+.settings_overview {
+	margin-top: 25px;
+}
+
+/* Remove the dot from the default HTML syntax on the settings overview page */
+.settings_overview > * > li {
+	list-style: none;
+}
+/* Moves the clickable link up slightly to align with the text description above */
+.settings_overview > * > p {
+	margin: 0 0 3px;
+}
+
+/* Style the headings of the overview menu correctly. */
+.settings_overview > * > h3 {
+	font-weight: 300;
+	margin-top: 0px;
+}
+
+/* Make the overiew icons larger than on the tab selection */
+.settings_overview > .dashnav > li > a > .fa2 {
+	width: 100px;
+	margin-top: -27px;
+	height: 100px;
+	opacity: 0.6;
 }

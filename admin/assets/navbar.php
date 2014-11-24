@@ -14,7 +14,7 @@
 	}
 </style>
 <div class="page-wrap">
-	<div id="top-nav" class="navbar navbar-fixed-top navbar-default">
+	<div id="top-nav" class="navbar navbar-fixed-top navbar-defaul navbar-admin">
 		<div class="container">
 			<div class="container">
 				<button type="button" class="btn btn-navbar" style="visibility: hidden;" data-toggle="collapse" data-target=".nav-collapse">
